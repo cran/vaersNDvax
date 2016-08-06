@@ -1,6 +1,6 @@
 ﻿# vaersNDvax
 
-Non-Domestic VAERS vaccine data for 01/01/2016 - 04/14/2016. If you want to explore the full VAERS data for 1990 - Present (data, symptoms, and vaccines), then check out the `vaersND` package from [https://gitlab.com/iembry/vaers](https://gitlab.com/iembry/vaers). `vaersND` is not hosted on CRAN due to the large size of the data set. "VAERS is a national vaccine safety surveillance program co-sponsored by the US Centers for Disease Control and Prevention (CDC) and the US Food and Drug Administration (FDA). VAERS is a post-marketing safety surveillance program, collecting information about adverse events (possible side effects) that occur after the administration of vaccines licensed for use in the United States." Source: [VAERS](https://vaers.hhs.gov/index).
+Non-Domestic VAERS vaccine data for 01/01/2016 - 06/14/2016. If you want to explore the full VAERS data for 1990 - Present (data, symptoms, and vaccines), then check out the `vaersND` package from [https://gitlab.com/iembry/vaers](https://gitlab.com/iembry/vaers). `vaersND` is not hosted on CRAN due to the large size of the data set. "VAERS is a national vaccine safety surveillance program co-sponsored by the US Centers for Disease Control and Prevention (CDC) and the US Food and Drug Administration (FDA). VAERS is a post-marketing safety surveillance program, collecting information about adverse events (possible side effects) that occur after the administration of vaccines licensed for use in the United States." Source: [VAERS](https://vaers.hhs.gov/index).
 
 For information about vaccination/immunization hazards, visit [http://www.questionuniverse.com/rethink.html/#vaccine](http://www.questionuniverse.com/rethink.html/#vaccine).
 
@@ -15,10 +15,8 @@ install.packages("vaersNDvax")
 
 # Examples
 ```R
-library(vaersNDvax)
-library(data.table)
-library(dplyr)
-library(rpivotTable)
+library(install.load)
+load_package("vaersNDvax", "data.table", "dplyr", "rpivotTable")# load needed packages using the load_package function from the install.load package (it is assumed that you have already installed these packages)
 
 
 ## load vaersNDvax
